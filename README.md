@@ -22,6 +22,29 @@ npm run unit
 
 # run all tests
 npm test
+
+# run fractal
+cd src
+fractal start --sync
 ```
+
+## Useful links
+
+> Vue.js Installation
+https://vuejs.org/v2/guide/installation.html
+
+> Fractal Installation
+https://fractal.build/guide/installation
+
+> Sass Installation
+https://sass-lang.com/install
+
+> Configurando Sass
+http://blog.caelum.com.br/tutorial-instalando-usando-sass-no-windows/
+
+> Koala-app
+http://koala-app.com/
+
+
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
