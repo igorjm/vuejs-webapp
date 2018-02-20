@@ -1,5 +1,4 @@
-<template>
-  <div class="about">
+<div class="about">
     <h1>POR QUE ESCOLHER A MEDLEY?</h1>
     <p>Alto padrão de qualidade e preço acessível.</p>
     <div class="slideshow-container">
@@ -52,64 +51,21 @@
         </div> -->
     </div>
     <div class="dots">
-        <span class="dot active" onclick=""></span>
-        <span class="dot" onclick=""></span>
-        <span class="dot" onclick=""></span>
-        <span class="dot" onclick=""></span>
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
     </div>
   </div>
-</template>
 
-<script>
-
-export default {
-    // data () {
-    //     var slideIndex = 1;
-    // },
-
-    // created() {
-    //     showSlides(slideIndex);
-    // },
-
-    // methods: {
-    //     plusSlides(n) {
-    //         showSlides(slideIndex += n);
-    //     },
-
-    //     currentSlide(n) {
-    //         showSlides(slideIndex = n);
-    //     },
-
-    //     showSlides(n) {
-    //         var i;
-    //         var slides = document.getElementsByClassName("slide");
-    //         var dots = document.getElementsByClassName("dot");
-    //         if (n > slides.length) {slideIndex = 1}    
-    //         if (n < 1) {slideIndex = slides.length}
-    //         for (i = 0; i < slides.length; i++) {
-    //             slides[i].style.display = "none";  
-    //         }
-    //         for (i = 0; i < dots.length; i++) {
-    //             dots[i].className = dots[i].className.replace(" active", "");
-    //         }
-    //         slides[slideIndex-1].style.display = "block";  
-    //         dots[slideIndex-1].className += " active";
-    //     }
-    // }
-
-}
-
-</script>
-
-<style>
+  <style>
 .about {
-    height: 1080px;
+    height: 985px;
     background: #fff no-repeat 50% 50%;
     background-size: cover;
     color: #333;
     text-align: center;
     padding-top: 31px;
-    font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
 }
 
 .about h1 {

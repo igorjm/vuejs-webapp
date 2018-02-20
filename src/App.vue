@@ -1,10 +1,12 @@
 <template>
   <div class="main">
-    <header-main-page />
+    <header-section />
     <home-section />
     <about-section />
     <campanhas-section />
-    <footer-main-page />
+    <saude-section />
+    <onde-encontrar-section />
+    <footer-section />
   </div>
 </template>
 
@@ -12,17 +14,21 @@
 import HeaderMainPage from './components/Headers/Header';
 import FooterMainPage from './components/Footer/Footer';
 import Home from './components/Home/Home';
-import About from './components/About/About'
-import Campanhas from './components/Campanhas/Campanhas'
+import About from './components/About/About';
+import Campanhas from './components/Campanhas/Campanhas';
+import Saude from './components/Saude/Saude';
+import OndeEncontrar from './components/OndeEncontrar/OndeEncontrar'
 
 export default {
   name: 'App',
   components: {
-    'header-main-page': HeaderMainPage,
-    'footer-main-page': FooterMainPage,
+    'header-section': HeaderMainPage,
     'home-section': Home,
     'about-section': About,
-    'campanhas-section': Campanhas
+    'campanhas-section': Campanhas,
+    'saude-section': Saude,
+    'onde-encontrar-section': OndeEncontrar,
+    'footer-section': FooterMainPage
   }
 }
 </script>
@@ -38,10 +44,6 @@ export default {
 
 *, *:before, *:after {
   box-sizing: inherit;
-}
-
-a {
-  text-decoration: none;
 }
 
 </style>

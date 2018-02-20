@@ -1,33 +1,5 @@
-<template>
-  <div class="header">
-    <div class="logo-header"><img src="../../assets/medley_logo.png" height="30" width="85" alt=""/></div>
-    <div class="sidebar-menu">
-      <button class="menu-button" id="menu-button">&#9776;</button>
-    </div>
-    <div class="header-search">
-      <img src="../../assets/search_icon.png" />
-      <input type="text" placeholder="O que você está procurando?">
-    </div>
-  </div>
-</template>
-
-<script>
-
-function openMenu(){
-  console.log("abriu");
-}
-
-export default {
-  data () {
-    return {
-
-    }
-  }
-}
-</script>
-
 <style>
-  .header {
+ .main-header {
     background: #1db2ac url(../../assets/bg-texture.jpg) repeat;
     width: 1920px;
     height: 100px;
@@ -85,3 +57,14 @@ export default {
     right: 15px;
   }
 </style>
+
+<div class="main-header">
+    <div class="logo-header"><img src="../../assets/medley_logo.png" height="30" width="85" alt=""/></div>
+    <div class="sidebar-menu">
+      <button class="menu-button" id="menu-button">&#9776;</button>
+    </div>
+    <div class="header-search">
+      <img src="../../assets/search_icon.png" />
+      <input type="text" placeholder="O que você está procurando?">
+    </div>
+  </div>

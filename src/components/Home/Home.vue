@@ -1,12 +1,10 @@
 <template>
   <div class="home">  
-    <div class="container">
       <h1>QUANDO O ASSUNTO É SAÚDE, CADA DETALHE É IMPORTANTE</h1>
       <p>PRECISÃO, CONTROLE, TRANSPARÊNCIA E A INCASÁVEL DEDICAÇÃO DE CADA DETALHE.
         É ISSO QUE VOCÊ ENCONTRA EM CADA CAIXINHA DA MEDLEY.</p>
-      <button class="btn">PLAY VIDEO</button>
+    <button class="btn">PLAY <br>VIDEO</button>
     </div>
-  </div>
 </template>
 
 <script>
@@ -24,12 +22,13 @@ export default {
 <style>
 
   .home {
-    height: 985px;
+    height: 1080px;
     background: #333 url(../../assets/bg-first.jpg) no-repeat 50% 50%;
     background-size: cover;
     color: #fff;
     text-align: center;
     padding-top: 31px;
+    font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
   }
 
   .home h1 {
@@ -46,10 +45,10 @@ export default {
   }
 
   .btn {
-    font-size: 20px;
-    margin: 70px;
-    width: 144px;
-    height: 144px;
+    font-size: 13px !important;
+    margin: 150px;
+    width: 130px !important;
+    height: 130px!important;
     position: relative;
     border: none;
     border-radius: 50%;

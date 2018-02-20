@@ -1,6 +1,32 @@
 <template>
-  <div class="home">  
-    
+  <div class="campanhas">
+    <div class="span2">
+        <h1>SUPERIORIDADE</h1>
+        <p>Para a Medley, saúde não é um detalhe.<br>
+        Ela está nos detalhes. Aperte o play e veja o nosso vídeo.</p>
+        <div class="conheca">
+            <button class="btn"><img src="../../assets/btn-campanhas.jpg" height="65px"/></button>
+            <p>Conheça a campanha</p>
+        </div>
+        <div class="dots-camp">
+            <span class="dot-camp active" onclick=""></span> 
+            <span class="dot-camp" onclick=""></span>
+            <span class="dot-camp" onclick=""></span>
+            <span class="dot-camp" onclick=""></span>
+        </div>
+    </div>
+    <div class="span2">
+        <div class="box">
+            <h3>Título do artigo Lorem Ipsum Isamet</h3>
+            <p>Duis ex nulla, auctor et porttitor vitae, cursus non turpis. In id imperdiet nunc. Proin sit amet pretium. 
+                Duis ex nulla, auctor et porttitor vitae, cursus non turpis. In id imperdiet nunc. Proin sit amet pretium...</p>
+            <p style="color:#7f7f7f">Jun 15.06.17</p>
+            <br>
+            <a class="link" href="">Saiba Mais</a>
+        </div>
+        <br>
+        <a href="" class="link-2">Ver todos os artigos</a>
+    </div>
   </div>
 </template>
 
@@ -10,7 +36,6 @@ export default {
 
   data () {
     return {
-      
     }
   }
 }
@@ -18,13 +43,111 @@ export default {
 
 <style>
 
-  .home {
-    height: 985px;
-    background: #333 url(../../assets/campanhas.jpg) no-repeat 50% 50%;
+.campanhas {
+    height: 1080px;
+    background: url(../../assets/campanhas.jpg) right bottom no-repeat, url(../../assets/campanhas2.jpg) right top no-repeat;
     background-size: cover;
     color: #fff;
-    text-align: center;
+    text-align: left;
     padding-top: 31px;
+    font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+}
+
+.campanhas h1 {
+    text-align: left;
+    color: #fff;
+    font-size: 80px;
+    font-weight: 400;
+    margin: 250px 0px 0px 220px;
+    max-width: 300px;
+}
+
+.campanhas p {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    max-width: 600px;
+    margin: 15px 0px 0px 220px;
+}
+
+.campanhas .conheca {
+    position: relative;
+    margin: -50px 0px 0px 80px;
+}
+
+.conheca p {
+    color: #6caa5e;
+    font-size: 30px;
+    max-width: 600px;
+    margin: -220px 0px 0px 300px;
+}
+
+.btn {
+    font-size: 20px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-image: -moz-linear-gradient( 0deg, rgb(27,176,170) 0%, rgb(117,190,99) 100%);
+    background-image: -webkit-linear-gradient( 0deg, rgb(27,176,170) 0%, rgb(117,190,99) 100%);
+    background-image: -ms-linear-gradient( 0deg, rgb(27,176,170) 0%, rgb(117,190,99) 100%);
+    color: #fff;
+    cursor:pointer;
   }
+
+.dot-camp {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: transparent;
+  border:1px solid white;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot-camp:hover {
+  background-color: #fff;
+}
+
+.dots-camp {
+    text-align: left;
+    margin: 100px 0px 0px 250px;
+}
+
+.box {
+    border: 1px solid white ;
+    width:600px;
+    height:350px;
+    background: white;
+    margin: -350px 0px 0px 1200px;
+}
+
+.box h3 {
+    color: black;
+    font-size: 38px;
+    font-weight: 400;
+    margin: 10px 0px 0px 5px;
+}
+
+.box p {
+    color: black;
+    font-size: 25px;
+    text-align: left;
+    margin: 30px 0px 0px 5px;
+}
+
+.box .link {
+    color: #70ceca;
+    font-style: italic;
+    font-size: 25px;
+    margin: 0px 0px 0px 5px;
+}
+
+.link-2 {
+    color: #75bd65;
+    font-size: 25px;
+    margin: 0px 0px 0px 1600px;
+}
 
 </style>

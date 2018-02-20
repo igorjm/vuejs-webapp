@@ -1,4 +1,9 @@
 ---
 title: Valtech test
 ---
-This is the component library for FooCorp. **Feel free to look around!**
+Este é um projeto de teste para vaga de Front-end na Valtech. <br>
+O projeto consiste na criação de uma página web que tem como base um modelo PSD.
+Ferramentas utilizadas no projeto:
+> Vue.JS <br>
+> Fractal
+> 
