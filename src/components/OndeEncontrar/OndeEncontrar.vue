@@ -4,6 +4,25 @@
             <h1>ONDE ENCONTRAR?</h1>
             <p>Os medicamentos Medley estão presentes em mais de 000 redes de farmácias em território nacional.</p>
         </div>
+        <div class="compre">
+            <p>Compre on-line:</p>
+            <b-form-select v-model="selected" :options="options" class="mb-1" />
+            <b-form-select v-model="selected" :options="options" class="mb-2" />
+        </div>
+        <div>
+            <button class="btn-campanhas"><img src="../../assets/thumbs/drogasil.jpg" height="100px"/></button>
+            <button class="btn-campanhas"><img src="../../assets/thumbs/raia.jpg" height="100px"/></button>
+            <button class="btn-campanhas"><img src="../../assets/thumbs/sao-paulo.jpg" height="100px"/></button>
+        </div>
+        <div class="foot">
+            <!-- <hr  width="45%" align="left"> -->
+            <p>ou</p>
+            <!-- <hr width="45%" align="right"> -->
+            <p>Se preferir, encontre uma farmácia mais próxima à você:</p>
+            <b-form-select v-model="selected" :options="options" class="mb-3" />
+            <br>
+            <button class="btn-buscar">BUSCAR</button>
+        </div>
     </div>
 </template>
 
@@ -13,7 +32,11 @@ export default {
 
   data () {
     return {
-      
+        selected: null,
+         options: [
+            { value: null, text: '  ESCOLHA O SEU ESTADO' },
+            { value: 'SANTA CATARINA', text: 'SANTA CATARINA' }
+        ]
     }
   }
 }
@@ -23,7 +46,7 @@ export default {
 
   .onde-encontrar {
     height: 1080px;
-    background: #333 url(../../assets/onde-econtrar-bg2.jpg) no-repeat 50% 50%;
+    background: #fff url(../../assets/onde-econtrar-bg2.jpg) no-repeat 50% 50%;
     background-size: cover;
     color: #fff;
     text-align: center;
@@ -43,4 +66,90 @@ export default {
     max-width: 620px;
     margin: 0 auto 51px;
   }
+  
+  .compre{
+      text-align: left;
+  }
+
+  .compre p{
+    font-size: 20px;
+    max-width: 620px;
+    margin: auto auto auto 400px;
+  }
+
+  .mb-1 {
+    width: 530px;
+    height: 50px;
+    font-size: 25px;
+    color: #fff;
+    margin: 20px auto auto 400px;
+    background: transparent;
+    font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    border: solid 1px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    cursor:pointer;
+  }
+
+  .mb-2 {
+    width: 530px;
+    height: 50px;
+    font-size: 25px;
+    color: #fff;
+    margin: 20px auto auto 100px;
+    background: transparent;
+    font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    border: solid 1px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    cursor:pointer;
+  }
+
+  .btn-campanhas {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    color: transparent;
+    cursor:pointer;
+    margin: 100px 20px auto auto;
+  }
+
+  .foot p {
+    font-size: 20px;
+    max-width: 620px;
+    margin: 50px auto auto auto;
+  }
+
+  .mb-3 {
+    width: 530px;
+    height: 50px;
+    font-size: 25px;
+    color: #fff;
+    margin: 20px auto auto auto;
+    background: transparent;
+    font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    border: solid 1px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    cursor:pointer;
+  }
+
+  .btn-buscar {
+    width: 211px;
+    height: 50px;
+    font-size: 25px;
+    color: #63bb72;
+    margin: 20px auto auto auto;
+    background: #fff;
+    font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    border: solid 1px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    cursor:pointer;
+  }
+
 </style>

@@ -1,12 +1,32 @@
 <template>
   <div class="saude">
-      <div class="saude-1 span2">
+      <div class="span2">
+        <div class="saude-1">   
+            <div class="circle-coracao">   
+                <p>SAÚDE DO CORAÇÃO</p>
+            </div>
+        </div>
       </div>
-      <div class="saude-2 span2">
+      <div class="span2">
+        <div class="saude-2">   
+            <div class="circle-mente">   
+                <p>MENTE E SUAS CONEXÕES</p>
+            </div>
+        </div>
       </div>
-      <div class="saude-3 span2">
-      </div>
-      <div class="saude-4 span2">
+     <div class="span2">
+        <div class="saude-3">   
+            <div class="circle-funcionamento">   
+                <p>FUNCIONAMENTO DO ORGANISMO</p>
+            </div>
+        </div>
+     </div>
+      <div class="span2">
+        <div class="saude-4">   
+            <div class="circle-cuidados">   
+            <p>CUIDADOS FEMININOS</p>                
+            </div>
+        </div>
       </div>
   </div>
 </template>
@@ -17,7 +37,6 @@ export default {
 
   data () {
     return {
-      
     }
   }
 }
@@ -26,6 +45,8 @@ export default {
 <style>
 
   .saude {
+    display: inline;
+    width: 1920px;
     height: 1080px;
     background-size: cover;
     color: #fff;
@@ -34,20 +55,96 @@ export default {
     font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
   }
 
-  .saude-1 {
-      background: #333 url(../../assets/saude-1.jpg) no-repeat 50% 50%;
+  p{
+      align-content: center;
+      margin: 220px 40px;
   }
 
+  .saude-1 {
+      height: 1080px;
+      width: 470px;
+      background: #333 url(../../assets/saude/saude-1.jpg) no-repeat 50% 50%;
+  }
+
+  .saude-1 .circle-coracao {
+    width:190px;
+    height:190px;
+    border:1px solid #2cb7b1;
+    border-radius:100%;
+    position: absolute;
+    z-index: 153;
+    margin: 420px 0px 0px 140px;
+    background-color: transparent;
+    background-image: url('../../assets/saude/saude-coracao.jpg') ;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
   .saude-2 {
-      background: #333 url(../../assets/saude-2.jpg) no-repeat 50% 50%;
+      height: 1080px;
+      width: 470px;
+      margin: -1080px 0px 0px 470px !important;
+      background: #333 url(../../assets/saude/saude-2.jpg) no-repeat 50% 50%;
+  }
+
+  .saude-2 .circle-mente {
+    width:190px;
+    height:190px;
+    border:1px solid #2cb7b1;
+    border-radius:100%;
+    position: absolute;
+    z-index: 153;
+    margin: 420px 0px 0px 140px;
+    background-color: transparent;
+    background-image: url('../../assets/saude/mente.jpg') ;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: 50%;
   }
 
   .saude-3 {
-      background: #333 url(../../assets/saude-3.jpg) no-repeat 50% 50%;
+      height: 1080px;
+      width: 470px;
+      margin: -1080px 0px 0px 940px !important;
+      background: #333 url(../../assets/saude/saude-3.jpg) no-repeat 50% 50%;
+  }
+
+  .saude-3 .circle-funcionamento{
+    width:190px;
+    height:190px;
+    border:1px solid #2cb7b1;
+    border-radius:100%;
+    position: absolute;
+    z-index: 153;
+    margin: 420px 0px 0px 140px;
+    background-color: transparent;
+    background-image: url('../../assets/saude/funcionamento.jpg') ;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: 50%;
   }
 
   .saude-4 {
-      background: #333 url(../../assets/saude-4.jpg) no-repeat 50% 50%;
+      height: 1080px;
+      width: 510px;
+      margin: -1080px 0px 0px 1410px !important;
+      background: #333 url(../../assets/saude/saude-4.jpg) no-repeat 50% 50%;
+  }
+
+  .saude-4 .circle-cuidados {
+      width:190px;
+    height:190px;
+    border:1px solid #2cb7b1;
+    border-radius:100%;
+    position: absolute;
+    z-index: 153;
+    margin: 420px 0px 0px 140px;
+    background-color: transparent;
+    background-image: url('../../assets/saude/cuidados.jpg') ;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: 50%;
   }
 
 </style>
