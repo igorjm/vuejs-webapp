@@ -1,47 +1,3 @@
-<template>
-    <div class="onde-encontrar">
-        <div class="head">
-            <h1>ONDE ENCONTRAR?</h1>
-            <p>Os medicamentos Medley estão presentes em mais de 000 redes de farmácias em território nacional.</p>
-        </div>
-        <div class="compre">
-            <p>Compre on-line:</p>
-            <b-form-select v-model="selected" :options="options" class="mb-1" />
-            <b-form-select v-model="selected" :options="options" class="mb-2" />
-        </div>
-        <div>
-            <button class="btn-campanhas"><img src="../../assets/thumbs/drogasil.jpg" height="100px"/></button>
-            <button class="btn-campanhas"><img src="../../assets/thumbs/raia.jpg" height="100px"/></button>
-            <button class="btn-campanhas"><img src="../../assets/thumbs/sao-paulo.jpg" height="100px"/></button>
-        </div>
-        <div class="foot">
-            <!-- <hr  width="45%" align="left"> -->
-            <p>ou</p>
-            <!-- <hr width="45%" align="right"> -->
-            <p>Se preferir, encontre uma farmácia mais próxima à você:</p>
-            <b-form-select v-model="selected" :options="options" class="mb-3" />
-            <br>
-            <button class="btn-buscar">BUSCAR</button>
-        </div>
-    </div>
-</template>
-
-<script>
-
-export default {
-
-  data () {
-    return {
-        selected: null,
-         options: [
-            { value: null, text: '  ESCOLHA O SEU ESTADO' },
-            { value: 'SANTA CATARINA', text: 'SANTA CATARINA' }
-        ]
-    }
-  }
-}
-</script>
-
 <style>
   .onde-encontrar {
     height: 1080px;
@@ -152,3 +108,29 @@ export default {
   }
 
 </style>
+
+<div class="onde-encontrar">
+        <div class="head">
+            <h1>ONDE ENCONTRAR?</h1>
+            <p>Os medicamentos Medley estão presentes em mais de 000 redes de farmácias em território nacional.</p>
+        </div>
+        <div class="compre">
+            <p>Compre on-line:</p>
+            <b-form-select v-model="selected" :options="options" class="mb-1" />
+            <b-form-select v-model="selected" :options="options" class="mb-2" />
+        </div>
+        <div>
+            <button class="btn-campanhas"><img src="../../assets/thumbs/drogasil.jpg" height="100px"/></button>
+            <button class="btn-campanhas"><img src="../../assets/thumbs/raia.jpg" height="100px"/></button>
+            <button class="btn-campanhas"><img src="../../assets/thumbs/sao-paulo.jpg" height="100px"/></button>
+        </div>
+        <div class="foot">
+            <!-- <hr  width="45%" align="left"> -->
+            <p>ou</p>
+            <!-- <hr width="45%" align="right"> -->
+            <p>Se preferir, encontre uma farmácia mais próxima à você:</p>
+            <b-form-select v-model="selected" :options="options" class="mb-3" />
+            <br>
+            <button class="btn-buscar">BUSCAR</button>
+        </div>
+    </div>
